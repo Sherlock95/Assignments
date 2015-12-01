@@ -1,0 +1,47 @@
+#include "textures.inc"
+#include "colors.inc"
+#include "cards.inc"
+
+light_source
+{
+    <-100,1000,-1000>
+    color White*1.2
+}
+
+camera
+{
+    location <0, 8, -30>
+    look_at <4, 3, 0>
+    angle 33
+}
+
+box
+{
+    <100, 1, -100>,
+    <-100, -1, 100>
+    texture
+    {
+        DMFLightOak
+    }
+}
+
+box
+{
+    <-200, 200, 200>,
+    <200, -200, 200>
+    texture
+    {   
+        pigment
+        {
+            color rgb<0.243, 0.647, 0.780>
+        }
+    }
+}
+
+object
+{
+    queenspade
+    rotate< 0, 180, 0 >
+    rotate< 90, 0, 0 >
+    translate< 0, 1.5, 0 >
+}
