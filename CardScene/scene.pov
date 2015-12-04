@@ -8,18 +8,16 @@ light_source
     color White*1.2
 }
 
-//camera
-//{
-//    location <-12, 100, -122>
-//    look_at <4, 3, 0>
-//    angle 33
-//}
-
 camera
 {
-    location <20, 160, -160>
-    look_at <-20, 3, 0>
+    location < 25,   3, -120>
+    look_at  <-10,  20,    0>
     angle 33
+}
+
+background 
+{
+    color rgb < 0.5, 0.8, 0.9 >
 }
 
 box
@@ -29,19 +27,6 @@ box
     texture
     {
         DMFLightOak
-    }
-}
-
-box
-{
-    <-200, 200, 200>,
-    <200, -200, 200>
-    texture
-    {   
-        pigment
-        {
-            color rgb<0.243, 0.647, 0.780>
-        }
     }
 }
 
